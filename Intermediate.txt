@@ -722,3 +722,22 @@ public class BasicCalculator {
 
 
 
+New Question :
+
+static void reverseArray(int[] intArray,int size){
+        int i, temp; 
+        for (i = 0; i < size/ 2; i++) { 
+            
+            //store first index value at temp
+            temp = intArray[i]; 
+            
+            //store lastIndex-i-1 value in i'th Index
+            intArray[i] = intArray[size - i - 1]; 
+            
+            //store temp value at lastIndex-i-1 
+            intArray[size - i - 1] = temp; 
+
+            //Loop will run till the mid position of given array
+        } 
+        //printing the reversed Array
+        System.out.println(Arrays.toString(intArray));
